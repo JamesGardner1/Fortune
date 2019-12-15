@@ -14,20 +14,26 @@
         android:layout_height="28dp"
         android:layout_marginEnd="39dp"
         android:layout_marginRight="39dp"
+        android:background="@android:color/holo_red_light"
+        android:duplicateParentState="false"
+        android:indeterminate="false"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@android:color/darker_gray"
+        android:indeterminateOnly="true"
         android:max="100"
-        android:progress="100"
-        android:progressDrawable="@android:color/holo_red_light"
+        android:progress="0"
+        android:progressDrawable="@android:color/darker_gray"
         app:layout_constraintBottom_toTopOf="@+id/xp_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/health_text" />
 
     <ProgressBar
         android:id="@+id/xp_bar"
-        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="0dp"
         android:layout_height="28dp"
         android:max="60"
-        android:progress="0"
+        android:progress="25"
         android:progressDrawable="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/health_bar"
@@ -114,4 +120,28 @@
         app:layout_constraintBottom_toTopOf="@+id/health_bar"
         app:layout_constraintEnd_toEndOf="@+id/card_button_2"
         app:layout_constraintTop_toBottomOf="@+id/card_button_2" />
+
+    <TextView
+        android:id="@+id/gold_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Gold :"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/level_text"
+        app:layout_constraintTop_toBottomOf="@+id/level_text" />
+
+    <TextView
+        android:id="@+id/gold_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gold_text"
+        app:layout_constraintStart_toEndOf="@+id/level_text" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
