@@ -244,12 +244,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void smallCreature() {
-        int damage = r.nextInt((elite.maxDamage - elite.minDamage) + 1) + elite.minDamage;
+        int damage = r.nextInt((smallCreatue.maxDamage - smallCreatue.minDamage) + 1) + smallCreatue.minDamage;
         player.hp = player.hp - damage;
-        player.xp = player.xp + elite.xp;
-        player.gold = player.gold + elite.gold;
+        player.xp = player.xp + smallCreatue.xp;
+        player.gold = player.gold + smallCreatue.gold;
 
-        Toast.makeText(MainActivity.this, "Lost " + damage + " health! Gained " + elite.gold + " gold and" + elite.xp + " experience!", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Lost " + damage + " health! Gained " + smallCreatue.gold + " gold and " + smallCreatue.xp + " experience!", Toast.LENGTH_LONG).show();
         setStatsInterface();
         checkUpdates();
         shuffleDraw();
@@ -338,7 +338,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void restartGame() {
-
+        setPlayerStats();
+        Intent restartGame = new Intent(MainActivity.this, RestartActivity.class);
+        startActivity(restartGame);
     }
 
 

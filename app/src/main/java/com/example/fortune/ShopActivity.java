@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +15,8 @@ public class ShopActivity extends AppCompatActivity {
     TextView goldText, potionText, prayerBeadsText, swordAndShieldText, expUpText, goldUpText, shopText;
     ImageView potion, prayerBeads, swordAndShield, expUpSkill, goldUpSkill;
     Button buyPotionButton, buyPrayerBeadsButton, buySwordAndShieldButton, buyExpUpButton, buyGoldUpButton, backButton;
+
+
 
 
     @Override
@@ -44,7 +47,7 @@ public class ShopActivity extends AppCompatActivity {
         buyPotionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                buyPotion();
             }
         });
 
@@ -89,5 +92,9 @@ public class ShopActivity extends AppCompatActivity {
     public void returnGame() {
         Intent returnGame = new Intent(ShopActivity.this, MainActivity.class);
         startActivity(returnGame);
+    }
+
+    public void buyPotion() {
+        Toast.makeText(ShopActivity.this,"Potion heals 25 health points", Toast.LENGTH_SHORT);
     }
 }
