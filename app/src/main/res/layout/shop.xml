@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tavern"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/shop_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginRight="184dp"
+        android:text="Shop"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/potion"
+        android:layout_width="111dp"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toTopOf="@+id/buy_potion_button"
+        app:layout_constraintEnd_toEndOf="@+id/potion_text"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toBottomOf="@+id/potion_text"
+        app:srcCompat="@drawable/potion" />
+
+    <ImageView
+        android:id="@+id/prayerbeads"
+        android:layout_width="111dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="13dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/buy_prayerbeads_button"
+        app:layout_constraintEnd_toEndOf="@+id/buy_goldup_button"
+        app:layout_constraintStart_toEndOf="@+id/shop_text"
+        app:layout_constraintTop_toBottomOf="@+id/prayerbeads_text"
+        app:srcCompat="@drawable/prayerbeads" />
+
+    <TextView
+        android:id="@+id/prayerbeads_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="Prayer Beads: 150 Gold"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buy_prayerbeads_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="44dp"
+        android:text="Buy"
+        app:layout_constraintBottom_toTopOf="@+id/goldup_text"
+        app:layout_constraintStart_toStartOf="@+id/prayerbeads" />
+
+    <TextView
+        android:id="@+id/goldup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="181dp"
+        android:text="Skill - Gold Up: 2000 gold"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/experienceup_text" />
+
+    <ImageView
+        android:id="@+id/goldup"
+        android:layout_width="111dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="17dp"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toTopOf="@+id/buy_goldup_button"
+        app:layout_constraintEnd_toEndOf="@+id/goldup_text"
+        app:layout_constraintStart_toStartOf="@+id/buy_prayerbeads_button"
+        app:layout_constraintTop_toBottomOf="@+id/goldup_text"
+        app:srcCompat="@drawable/goldup" />
+
+    <Button
+        android:id="@+id/buy_goldup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="16dp"
+        android:text="Buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/swordandshield"
+        android:layout_width="111dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/prayerbeads"
+        app:layout_constraintEnd_toEndOf="@+id/buy_swordandshield_button"
+        app:layout_constraintStart_toStartOf="@+id/expup"
+        app:layout_constraintTop_toBottomOf="@+id/swordandshield_text"
+        app:srcCompat="@drawable/swordandshield" />
+
+    <ImageView
+        android:id="@+id/expup"
+        android:layout_width="111dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="17dp"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toTopOf="@+id/buy_expup_button"
+        app:layout_constraintEnd_toStartOf="@+id/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/experienceup_text"
+        app:srcCompat="@drawable/skillxpup" />
+
+    <Button
+        android:id="@+id/buy_potion_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="17dp"
+        android:text="Buy"
+        app:layout_constraintBottom_toTopOf="@+id/prayerbeads_text"
+        app:layout_constraintEnd_toEndOf="@+id/potion" />
+
+    <Button
+        android:id="@+id/buy_swordandshield_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="21dp"
+        android:text="Buy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swordandshield" />
+
+    <Button
+        android:id="@+id/buy_expup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="16dp"
+        android:text="Buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="16dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/goldup" />
+
+    <TextView
+        android:id="@+id/potion_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:text="Potion: 25 Gold"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/swordandshield_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Sword and Shield: 500 Gold"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/prayerbeads_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/prayerbeads_text" />
+
+    <TextView
+        android:id="@+id/experienceup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Skill - Experience Up: 1500 Gold"
+        android:textColor="@android:color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/goldup_text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/gold_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="14dp"
+        android:text="Gold"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/player_gold"
+        app:layout_constraintStart_toStartOf="@+id/player_gold" />
+
+    <TextView
+        android:id="@+id/player_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="195dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

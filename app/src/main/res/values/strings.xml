@@ -1,5 +1,3 @@
 <resources>
     <string name="app_name">Fortune</string>
-    <string name="big_creature">big_creature</string>
-    <drawable name="bigcreature">big_creature</drawable>
 </resources>
